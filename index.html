@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-axA-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Prompt Studio - By Animesh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-purple': '#6d28d9',
+              'brand-light': '#f5f3ff',
+              'brand-dark': '#111827',
+              'brand-gray': '#1f2937',
+              'brand-mid-gray': '#374151',
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+            },
+            animation: {
+              'fade-in': 'fade-in 0.5s ease-in-out',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      .film-strip-container::-webkit-scrollbar { height: 8px; }
+      .film-strip-container::-webkit-scrollbar-track { background: #1f2937; border-radius: 10px; }
+      .film-strip-container::-webkit-scrollbar-thumb { background: #374151; border-radius: 10px; }
+      .film-strip-container::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.12.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-dark">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
